@@ -15,7 +15,9 @@ findLT db w = lowerbound db w 0 top
 
 -- lb points to a word
 -- return first word in [lb, ub) which is >= w
--- 
+--
+-- Uncomment the `tr $` in the definition of w' to
+-- trace execution of the binary search.
 lowerbound db w lb ub
   | mid <= lb    = linsearch  db w lb ub
   | w'end >= ub  = linsearch  db w lb ub
@@ -52,8 +54,6 @@ advance db top p
 -- extract the word at position p
 -- assume p < length of db
 takeWord db p = BS.takeWhile (/= '\n') $ BS.drop p db
-
-readDB = BS.readFile "ODS6.txt"
 
 test db w = do
   let p = findLT db w

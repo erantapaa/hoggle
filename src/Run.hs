@@ -19,7 +19,8 @@ showWords dictPath board = do
       (gw, gh, minlen)
         | len == 16 = (4, 4, 3)
         | len == 25 = (5, 5, 3)
-        | otherwise          = error "board not 16 or 25 characters"
+        | len == 36 = (6, 6, 3)
+        | otherwise = error "board not 16, 25 or 36 characters"
         where len = length letters
   db <- BS.readFile dictPath
 
@@ -49,4 +50,7 @@ best4x4 = "S E R S P A T G L I N E S E R S"
 
 -- The densest 5x5 board: 3120+ words
 best5x5 = " R S C L S D E I A E G N T R P I A E S O L M I D C"
+
+-- The densest 6x6 board: 5243 words (with dictionary 6x6.txt)
+best6x6 = " D S R O D G T E M E N S R A S I T O D G N T R P R E I A E S T S C L P D"
 

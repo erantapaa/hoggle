@@ -21,6 +21,6 @@ match the case of the dictionary. The found words will
 also match the case of the dictionary.
 
 - See http://ai.stanford.edu/~chuongdo/boggle/ for info
-on dense Boggle boards. The 4x4 and 5x5 boards are
-defined in the `Run` module as `best4x4` and `best5x5`.
+on dense Boggle boards. The 4x4, 5x5 and 6x6 boards are
+available in the `Run` module as `best4x4`, `best5x5` and `best6x6`.
 
