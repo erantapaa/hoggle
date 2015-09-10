@@ -16,6 +16,11 @@ From ghci:
 Notes:
 
 - The dictionary files may be either all upper case
-or all lower case. The found words will match the case of
-the dictionary.
+or all lower case. The board will be converted to
+match the case of the dictionary. The found words will
+also match the case of the dictionary.
+
+- See http://ai.stanford.edu/~chuongdo/boggle/ for info
+on dense Boggle boards. The 4x4 and 5x5 boards are
+defined in the `Run` module as `best4x4` and `best5x5`.
 
