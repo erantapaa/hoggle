@@ -1,4 +1,4 @@
-A Boggle solver.
+A Boggle solver written in Haskell.
 
 Usage from the command line:
 
