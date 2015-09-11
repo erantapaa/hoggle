@@ -16,7 +16,7 @@ data-files:    dicts/4x4.txt, dicts/5x5.txt, dicts/word.list, dicts/ods6.txt
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib, Solver, Run
+  exposed-modules:     Lib, Solver, Run, GridBitSet, Grid
   other-modules:       Paths_hoggle
   build-depends:       base >= 4.7 && < 5, bytestring, containers, data-ordlist
   default-language:    Haskell2010

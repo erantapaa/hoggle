@@ -3,6 +3,7 @@ where
 
 import Solver
 import Lib
+import Grid
 import System.Environment
 import qualified Data.ByteString.Char8 as BS
 import Control.Monad
