@@ -27,6 +27,10 @@ From ghci:
 
 Notes:
 
+- The dictionary files must have the words in
+sorted order in order for the "bs" trie implementation
+to work.
+
 - The dictionary files may be either all upper case
 or all lower case. The board will be converted to
 match the case of the dictionary. The found words will
