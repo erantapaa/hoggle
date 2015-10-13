@@ -7,7 +7,7 @@ Usage from the command line:
 Either 16, 25 or 36 letters may be specified for a 4x4, 5x5  or 6x6
 grid respectively.
 
-Non-alpha characters in the baord are ignored.
+Non-alpha characters in the board are ignored.
 
 Instead of letters, one may also use the values "best4", "best5"
 and "best6" to specify the densest 4x4, 5x5 and 6x6 boards found
